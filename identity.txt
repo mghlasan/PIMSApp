@@ -1,0 +1,33 @@
+CREATE
+
+TABLE Alpha (
+
+ID
+
+INT IDENTITY(0,1),
+
+AlphaID
+
+AS CASE LEN(ID) WHEN 1 THEN 'PY'+'000'+convert(varchar,ID)
+
+ 
+
+WHEN 2 THEN 'PY'+'00'+convert(varchar,ID)
+
+ 
+
+ELSE 'PY' + convert(varchar,ID) END
+
+PERSISTED
+
+PRIMARY KEY,
+
+[Desc]
+
+varchar(64) default (''),
+
+ModifiedDate
+
+datetime default(getdate()));
+
+GO

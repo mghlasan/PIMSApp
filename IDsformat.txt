@@ -1,0 +1,9 @@
+ItemID = I0000001
+CategoryID=C0000001
+SupplierID=S0000001
+PayerID=Payer0001
+PayeeID=Payee0001
+BankID=B0001
+UserID=pimsXXX
+CustomerID=CUS00001
+ShippingAgency=SA00001

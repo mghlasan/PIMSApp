@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{701C2B51-B4CD-4D62-9BCA-3D2CFAAE8514}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PIMS_Panthitsar_Inventory_Management_System</RootNamespace>
+    <AssemblyName>PIMS_Panthitsar_Inventory_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapitalManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapitalManagement.Designer.cs">
+      <DependentUpon>CapitalManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurationManagement.Designer.cs">
+      <DependentUpon>ConfigurationManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandlePurchaseItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandlePurchaseItems.Designer.cs">
+      <DependentUpon>HandlePurchaseItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="objects\BankDetails.cs" />
+    <Compile Include="objects\Banks.cs" />
+    <Compile Include="objects\Capitals.cs" />
+    <Compile Include="objects\Categories.cs" />
+    <Compile Include="objects\Customers.cs" />
+    <Compile Include="objects\Items.cs" />
+    <Compile Include="objects\OrderDetails.cs" />
+    <Compile Include="objects\Orders.cs" />
+    <Compile Include="objects\Payees.cs" />
+    <Compile Include="objects\PayerDetails.cs" />
+    <Compile Include="objects\Payers.cs" />
+    <Compile Include="objects\PointOfSale.cs" />
+    <Compile Include="objects\PointOfSaleDetails.cs" />
+    <Compile Include="objects\ShippingAgencies.cs" />
+    <Compile Include="objects\ShippingAgencyDetails.cs" />
+    <Compile Include="objects\ShippingItemDetails.cs" />
+    <Compile Include="objects\ShippingItems.cs" />
+    <Compile Include="objects\Suppliers.cs" />
+    <Compile Include="objects\System_Users.cs" />
+    <Compile Include="objects\WarehouseStock.cs" />
+    <Compile Include="OrderManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderManagement.Designer.cs">
+      <DependentUpon>OrderManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PIMSHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PIMSHome.Designer.cs">
+      <DependentUpon>PIMSHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointOfSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointOfSale.Designer.cs">
+      <DependentUpon>PointOfSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSAddPurchasedItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSAddPurchasedItems.Designer.cs">
+      <DependentUpon>POSAddPurchasedItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSBackup.Designer.cs">
+      <DependentUpon>POSBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\DBBanks.cs" />
+    <Compile Include="util\DBCategories.cs" />
+    <Compile Include="util\DBCustomers.cs" />
+    <Compile Include="util\DBPayees.cs" />
+    <Compile Include="util\DBPayers.cs" />
+    <Compile Include="util\DBShippingAgencies.cs" />
+    <Compile Include="util\DBSuppliers.cs" />
+    <Compile Include="util\DBUsers.cs" />
+    <Compile Include="util\DBUtil.cs" />
+    <Compile Include="WarehouseManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseManagement.Designer.cs">
+      <DependentUpon>WarehouseManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CapitalManagement.resx">
+      <DependentUpon>CapitalManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigurationManagement.resx">
+      <DependentUpon>ConfigurationManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandlePurchaseItems.resx">
+      <DependentUpon>HandlePurchaseItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.CapitalManagement.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.ConfigurationManagement.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.HandlePurchaseItems.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.Home.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.Login.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.OrderManagement.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.PointOfSale.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.WarehouseManagement.resources" />
+    <EmbeddedResource Include="OrderManagement.resx">
+      <DependentUpon>OrderManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PIMSHome.resx">
+      <DependentUpon>PIMSHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointOfSale.resx">
+      <DependentUpon>PointOfSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSAddPurchasedItems.resx">
+      <DependentUpon>POSAddPurchasedItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSBackup.resx">
+      <DependentUpon>POSBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WarehouseManagement.resx">
+      <DependentUpon>WarehouseManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\x86\Debug\GenerateResource.write.1.tlog" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="dao\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\PIMS_Panthitsar_Inventory_Management_System.exe" />
+    <Content Include="bin\Debug\PIMS_Panthitsar_Inventory_Management_System.pdb" />
+    <Content Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.exe" />
+    <Content Include="obj\x86\Debug\PIMS_Panthitsar_Inventory_Management_System.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
